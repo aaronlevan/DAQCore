@@ -1,0 +1,66 @@
+{
+	"packages": [
+		{
+			"name": "DAQ-Board",
+			"maintainer": "D5T",
+			"websiteURL": "https://github.com/aaronlevan/DAQCore",
+			"email": "aaron@dangelotechnologies.com",
+			"help": {
+				"online": "https://github.com/aaronlevan/DAQCore"
+			},
+			"platforms": [
+				{
+					"name": "DAQ Board",
+					"architecture": "avr",
+					"version": "1.1.0",
+					"category": "Contributed",
+					"url": "https://github.com/aaronlevan/DAQCore/archive/refs/tags/1.1.tar.gz",
+					"archiveFileName": "DAQCore-1.1.tar.gz",
+					"checksum": "SHA-256:31e2421fb284912128b7bef59da314ca018a46e4a665e34b9877f2560fb43eda",
+					"size": "51838",
+					"boards": [
+						{
+							"name": "DAQ Board"
+						}
+					],
+					"toolsDependencies": [
+						{
+							"packager": "arduino",
+							"name": "arm-none-eabi-gcc",
+							"version": "4.8.3-2014q1"
+						},
+						{
+							"packager": "arduino",
+							"name": "bossac",
+							"version": "1.7.0"
+						},
+						{
+							"packager": "arduino",
+							"name": "openocd",
+							"version": "0.9.0-arduino6-static"
+						},
+						{
+							"packager": "arduino",
+							"name": "CMSIS",
+							"version": "4.5.0"
+						},
+						{
+							"packager": "arduino",
+							"name": "CMSIS-Atmel",
+							"version": "1.1.0"
+						},
+						{
+							"packager": "arduino",
+							"name": "arduinoOTA",
+							"version": "1.2.0"
+						}
+					]
+				}
+			],
+			"tools": [
+
+			]
+		}
+	]
+
+}

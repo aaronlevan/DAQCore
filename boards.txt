@@ -1,0 +1,217 @@
+menu.usb=USB Type
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.keys=Keyboard Layout
+
+
+# TODO: consider whether these compiler warnings are worthwhile
+# -Wno-error=unused-function
+# -Wno-error=unused-but-set-variable
+# -Wno-error=unused-variable
+# -Wno-unused-parameter
+# -Wno-unused-but-set-parameter
+# -Wno-sign-compare
+
+
+daqboard.name=DAQ Board
+#daqboard.upload.maximum_size=8126464
+daqboard.build.board=TEENSY41_DAQBOARD
+daqboard.build.flags.ld=-Wl,--gc-sections,--relax "-T{build.core.path}/imxrt1062_t41.ld"
+#daqboard.upload.maximum_data_size=524288
+daqboard.upload.tool=teensyloader
+daqboard.upload.tool.default=teensyloader
+daqboard.upload.tool.teensy=teensyloader
+daqboard.upload.protocol=teensy
+daqboard.upload_port.modelID=0x25
+daqboard.build.core=teensy4
+daqboard.build.mcu=imxrt1062
+daqboard.build.warn_data_percentage=99
+daqboard.build.toolchain=arm/bin/
+daqboard.build.command.gcc=arm-none-eabi-gcc
+daqboard.build.command.g++=arm-none-eabi-g++
+daqboard.build.command.ar=arm-none-eabi-gcc-ar
+daqboard.build.command.objcopy=arm-none-eabi-objcopy
+daqboard.build.command.objdump=arm-none-eabi-objdump
+daqboard.build.command.linker=arm-none-eabi-gcc
+daqboard.build.command.size=arm-none-eabi-size
+daqboard.build.flags.common=-g -Wall -ffunction-sections -fdata-sections -nostdlib
+daqboard.build.flags.dep=-MMD
+daqboard.build.flags.optimize=-Os
+daqboard.build.flags.cpu=-mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16
+daqboard.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=157
+daqboard.build.flags.cpp=-std=gnu++14 -fno-exceptions -fpermissive -fno-rtti -fno-threadsafe-statics -felide-constructors -Wno-error=narrowing
+daqboard.build.flags.c=
+daqboard.build.flags.S=-x assembler-with-cpp
+daqboard.build.flags.libs=-larm_cortexM7lfsp_math -lm -lstdc++
+daqboard.serial.restart_cmd=false
+daqboard.menu.usb.serial=Serial
+daqboard.menu.usb.serial.build.usbtype=USB_SERIAL
+daqboard.menu.usb.serial2=Dual Serial
+daqboard.menu.usb.serial2.build.usbtype=USB_DUAL_SERIAL
+daqboard.menu.usb.serial3=Triple Serial
+daqboard.menu.usb.serial3.build.usbtype=USB_TRIPLE_SERIAL
+daqboard.menu.usb.keyboard=Keyboard
+daqboard.menu.usb.keyboard.build.usbtype=USB_KEYBOARDONLY
+daqboard.menu.usb.keyboard.fake_serial=teensy_gateway
+daqboard.menu.usb.touch=Keyboard + Touch Screen
+daqboard.menu.usb.touch.build.usbtype=USB_TOUCHSCREEN
+daqboard.menu.usb.touch.fake_serial=teensy_gateway
+daqboard.menu.usb.hidtouch=Keyboard + Mouse + Touch Screen
+daqboard.menu.usb.hidtouch.build.usbtype=USB_HID_TOUCHSCREEN
+daqboard.menu.usb.hidtouch.fake_serial=teensy_gateway
+daqboard.menu.usb.hid=Keyboard + Mouse + Joystick
+daqboard.menu.usb.hid.build.usbtype=USB_HID
+daqboard.menu.usb.hid.fake_serial=teensy_gateway
+daqboard.menu.usb.serialhid=Serial + Keyboard + Mouse + Joystick
+daqboard.menu.usb.serialhid.build.usbtype=USB_SERIAL_HID
+daqboard.menu.usb.midi=MIDI
+daqboard.menu.usb.midi.build.usbtype=USB_MIDI
+daqboard.menu.usb.midi.fake_serial=teensy_gateway
+daqboard.menu.usb.midi4=MIDIx4
+daqboard.menu.usb.midi4.build.usbtype=USB_MIDI4
+daqboard.menu.usb.midi4.fake_serial=teensy_gateway
+daqboard.menu.usb.midi16=MIDIx16
+daqboard.menu.usb.midi16.build.usbtype=USB_MIDI16
+daqboard.menu.usb.midi16.fake_serial=teensy_gateway
+daqboard.menu.usb.serialmidi=Serial + MIDI
+daqboard.menu.usb.serialmidi.build.usbtype=USB_MIDI_SERIAL
+daqboard.menu.usb.serialmidi4=Serial + MIDIx4
+daqboard.menu.usb.serialmidi4.build.usbtype=USB_MIDI4_SERIAL
+daqboard.menu.usb.serialmidi16=Serial + MIDIx16
+daqboard.menu.usb.serialmidi16.build.usbtype=USB_MIDI16_SERIAL
+daqboard.menu.usb.audio=Audio
+daqboard.menu.usb.audio.build.usbtype=USB_AUDIO
+daqboard.menu.usb.audio.fake_serial=teensy_gateway
+daqboard.menu.usb.serialmidiaudio=Serial + MIDI + Audio
+daqboard.menu.usb.serialmidiaudio.build.usbtype=USB_MIDI_AUDIO_SERIAL
+daqboard.menu.usb.serialmidi16audio=Serial + MIDIx16 + Audio
+daqboard.menu.usb.serialmidi16audio.build.usbtype=USB_MIDI16_AUDIO_SERIAL
+daqboard.menu.usb.mtp=MTP Disk (Experimental)
+daqboard.menu.usb.mtp.build.usbtype=USB_MTPDISK
+daqboard.menu.usb.mtp.fake_serial=teensy_gateway
+daqboard.menu.usb.rawhid=Raw HID
+daqboard.menu.usb.rawhid.build.usbtype=USB_RAWHID
+daqboard.menu.usb.rawhid.fake_serial=teensy_gateway
+daqboard.menu.usb.flightsim=Flight Sim Controls
+daqboard.menu.usb.flightsim.build.usbtype=USB_FLIGHTSIM
+daqboard.menu.usb.flightsim.fake_serial=teensy_gateway
+daqboard.menu.usb.flightsimjoystick=Flight Sim Controls + Joystick
+daqboard.menu.usb.flightsimjoystick.build.usbtype=USB_FLIGHTSIM_JOYSTICK
+daqboard.menu.usb.flightsimjoystick.fake_serial=teensy_gateway
+#daqboard.menu.usb.disable=No USB
+#daqboard.menu.usb.disable.build.usbtype=USB_DISABLED
+
+daqboard.menu.speed.600=600 MHz
+daqboard.menu.speed.528=528 MHz
+daqboard.menu.speed.450=450 MHz
+daqboard.menu.speed.396=396 MHz
+daqboard.menu.speed.150=150 MHz
+daqboard.menu.speed.24=24 MHz
+daqboard.menu.speed.720=720 MHz (overclock)
+daqboard.menu.speed.816=816 MHz (overclock)
+daqboard.menu.speed.912=912 MHz (overclock, cooling req'd)
+daqboard.menu.speed.960=960 MHz (overclock, cooling req'd)
+daqboard.menu.speed.1008=1.008 GHz (overclock, cooling req'd)
+daqboard.menu.speed.1008.build.fcpu=1008000000
+daqboard.menu.speed.960.build.fcpu=960000000
+daqboard.menu.speed.912.build.fcpu=912000000
+daqboard.menu.speed.816.build.fcpu=816000000
+daqboard.menu.speed.720.build.fcpu=720000000
+daqboard.menu.speed.600.build.fcpu=600000000
+daqboard.menu.speed.528.build.fcpu=528000000
+daqboard.menu.speed.450.build.fcpu=450000000
+daqboard.menu.speed.396.build.fcpu=396000000
+daqboard.menu.speed.150.build.fcpu=150000000
+daqboard.menu.speed.24.build.fcpu=24000000
+
+daqboard.menu.opt.o2std=Faster
+daqboard.menu.opt.o2std.build.flags.optimize=-O2
+daqboard.menu.opt.o2std.build.flags.ldspecs=
+#daqboard.menu.opt.o2lto=Faster with LTO
+#daqboard.menu.opt.o2lto.build.flags.optimize=-O2 -flto -fno-fat-lto-objects
+#daqboard.menu.opt.o2lto.build.flags.ldspecs=-fuse-linker-plugin
+daqboard.menu.opt.o1std=Fast
+daqboard.menu.opt.o1std.build.flags.optimize=-O1
+daqboard.menu.opt.o1std.build.flags.ldspecs=
+#daqboard.menu.opt.o1lto=Fast with LTO
+#daqboard.menu.opt.o1lto.build.flags.optimize=-O1 -flto -fno-fat-lto-objects
+#daqboard.menu.opt.o1lto.build.flags.ldspecs=-fuse-linker-plugin
+daqboard.menu.opt.o3std=Fastest
+daqboard.menu.opt.o3std.build.flags.optimize=-O3
+daqboard.menu.opt.o3std.build.flags.ldspecs=
+#daqboard.menu.opt.o3purestd=Fastest + pure-code
+#daqboard.menu.opt.o3purestd.build.flags.optimize=-O3 -mpure-code -D__PURE_CODE__
+#daqboard.menu.opt.o3purestd.build.flags.ldspecs=
+#daqboard.menu.opt.o3lto=Fastest with LTO
+#daqboard.menu.opt.o3lto.build.flags.optimize=-O3 -flto -fno-fat-lto-objects
+#daqboard.menu.opt.o3lto.build.flags.ldspecs=-fuse-linker-plugin
+#daqboard.menu.opt.o3purelto=Fastest + pure-code with LTO
+#daqboard.menu.opt.o3purelto.build.flags.optimize=-O3 -mpure-code -D__PURE_CODE__ -flto -fno-fat-lto-objects
+#daqboard.menu.opt.o3purelto.build.flags.ldspecs=-fuse-linker-plugin
+daqboard.menu.opt.ogstd=Debug
+daqboard.menu.opt.ogstd.build.flags.optimize=-Og
+daqboard.menu.opt.ogstd.build.flags.ldspecs=
+#daqboard.menu.opt.oglto=Debug with LTO
+#daqboard.menu.opt.oglto.build.flags.optimize=-Og -flto -fno-fat-lto-objects
+#daqboard.menu.opt.oglto.build.flags.ldspecs=-fuse-linker-plugin
+daqboard.menu.opt.osstd=Smallest Code
+daqboard.menu.opt.osstd.build.flags.optimize=-Os --specs=nano.specs
+daqboard.menu.opt.osstd.build.flags.ldspecs=
+#daqboard.menu.opt.oslto=Smallest Code with LTO
+#daqboard.menu.opt.oslto.build.flags.optimize=-Os -flto -fno-fat-lto-objects --specs=nano.specs
+#daqboard.menu.opt.oslto.build.flags.ldspecs=-fuse-linker-plugin
+
+daqboard.menu.keys.en-us=US English
+daqboard.menu.keys.en-us.build.keylayout=US_ENGLISH
+daqboard.menu.keys.fr-ca=Canadian French
+daqboard.menu.keys.fr-ca.build.keylayout=CANADIAN_FRENCH
+daqboard.menu.keys.xx-ca=Canadian Multilingual
+daqboard.menu.keys.xx-ca.build.keylayout=CANADIAN_MULTILINGUAL
+daqboard.menu.keys.cz-cz=Czech
+daqboard.menu.keys.cz-cz.build.keylayout=CZECH
+daqboard.menu.keys.da-da=Danish
+daqboard.menu.keys.da-da.build.keylayout=DANISH
+daqboard.menu.keys.fi-fi=Finnish
+daqboard.menu.keys.fi-fi.build.keylayout=FINNISH
+daqboard.menu.keys.fr-fr=French
+daqboard.menu.keys.fr-fr.build.keylayout=FRENCH
+daqboard.menu.keys.fr-be=French Belgian
+daqboard.menu.keys.fr-be.build.keylayout=FRENCH_BELGIAN
+daqboard.menu.keys.fr-ch=French Swiss
+daqboard.menu.keys.fr-ch.build.keylayout=FRENCH_SWISS
+daqboard.menu.keys.de-de=German
+daqboard.menu.keys.de-de.build.keylayout=GERMAN
+daqboard.menu.keys.de-dm=German (Mac)
+daqboard.menu.keys.de-dm.build.keylayout=GERMAN_MAC
+daqboard.menu.keys.de-ch=German Swiss
+daqboard.menu.keys.de-ch.build.keylayout=GERMAN_SWISS
+daqboard.menu.keys.is-is=Icelandic
+daqboard.menu.keys.is-is.build.keylayout=ICELANDIC
+daqboard.menu.keys.en-ie=Irish
+daqboard.menu.keys.en-ie.build.keylayout=IRISH
+daqboard.menu.keys.it-it=Italian
+daqboard.menu.keys.it-it.build.keylayout=ITALIAN
+daqboard.menu.keys.no-no=Norwegian
+daqboard.menu.keys.no-no.build.keylayout=NORWEGIAN
+daqboard.menu.keys.pt-pt=Portuguese
+daqboard.menu.keys.pt-pt.build.keylayout=PORTUGUESE
+daqboard.menu.keys.pt-br=Portuguese Brazilian
+daqboard.menu.keys.pt-br.build.keylayout=PORTUGUESE_BRAZILIAN
+daqboard.menu.keys.rs-rs=Serbian (Latin Only)
+daqboard.menu.keys.rs-rs.build.keylayout=SERBIAN_LATIN_ONLY
+daqboard.menu.keys.es-es=Spanish
+daqboard.menu.keys.es-es.build.keylayout=SPANISH
+daqboard.menu.keys.es-mx=Spanish Latin America
+daqboard.menu.keys.es-mx.build.keylayout=SPANISH_LATIN_AMERICA
+daqboard.menu.keys.sv-se=Swedish
+daqboard.menu.keys.sv-se.build.keylayout=SWEDISH
+daqboard.menu.keys.tr-tr=Turkish (partial)
+daqboard.menu.keys.tr-tr.build.keylayout=TURKISH
+daqboard.menu.keys.en-gb=United Kingdom
+daqboard.menu.keys.en-gb.build.keylayout=UNITED_KINGDOM
+daqboard.menu.keys.usint=US International
+daqboard.menu.keys.usint.build.keylayout=US_INTERNATIONAL
+
+
+
+
