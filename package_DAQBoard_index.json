@@ -16,7 +16,7 @@
 					"category": "Contributed",
 					"url": "https://github.com/aaronlevan/DAQCore/archive/refs/tags/1.1.0.tar.gz",
 					"archiveFileName": "DAQCore-1.1.0.tar.gz",
-					"checksum": "SHA-256:fd20e8861b1f9d05eaf877ad47eb228bb56ddb7f8723a7b4425f7429d2676562",
+					"checksum": "SHA-256:efb15863c8214701625b90318e63a2c4899203b6f3f8e0a36a8ac4bbe2db470a",
 					"size": "36888576",
 					"boards": [
 						{
