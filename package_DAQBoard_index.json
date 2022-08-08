@@ -14,10 +14,10 @@
 					"architecture": "avr",
 					"version": "1.1.0",
 					"category": "Contributed",
-					"url": "https://github.com/aaronlevan/DAQCore/archive/refs/tags/1.1.tar.gz",
-					"archiveFileName": "DAQCore-1.1.tar.gz",
-					"checksum": "SHA-256:31e2421fb284912128b7bef59da314ca018a46e4a665e34b9877f2560fb43eda",
-					"size": "51838",
+					"url": "https://github.com/aaronlevan/DAQCore/archive/refs/tags/1.1.0.tar.gz",
+					"archiveFileName": "DAQCore-1.1.0.tar.gz",
+					"checksum": "SHA-256:fd20e8861b1f9d05eaf877ad47eb228bb56ddb7f8723a7b4425f7429d2676562",
+					"size": "36888576",
 					"boards": [
 						{
 							"name": "DAQ Board"
